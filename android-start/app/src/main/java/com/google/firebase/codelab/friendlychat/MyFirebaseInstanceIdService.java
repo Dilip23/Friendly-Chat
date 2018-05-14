@@ -20,6 +20,7 @@ import android.util.Log;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.firebase.messaging.FirebaseMessagingService;
 
 public class MyFirebaseInstanceIdService {
 
@@ -30,6 +31,11 @@ public class MyFirebaseInstanceIdService {
      * The Application's current Instance ID token is no longer valid and thus a new one must be requested.
      */
     public void onTokenRefresh() {
+        String token = FirebaseInstanceId.getInstance().getToken();
+        Log.d(TAG,"FCM Token: "+token);
+
+        //Once token is generated,we register to topic
+        FirebaseMessaging.getInstance().subscribeToTopic(FRIENDLY_ENGAGE_TOPIC);
     }
 
 }
