@@ -1,18 +1,2 @@
-<<<<<<< HEAD
-# Firebase Codelab: FriendlyChat
+Chat App using Firebase in RealTime
 
-This is the source code for the Firebase FriendlyChat codelab. It includes start and end versions of the
-code for Android,. To get started open the codelab instructions:
-
- - [Firebase Android Codelab](https://codelabs.developers.google.com/codelabs/firebase-android/).
-
-
-## How to make contributions?
-Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md)
-
-
-## License
-See [LICENSE](LICENSE)
-=======
-# Friendly-Chat
->>>>>>> 379e1b9f3b3409b89b48c2a410099c7344dc803c
